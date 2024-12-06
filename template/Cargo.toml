@@ -1,0 +1,8 @@
+[package]
+name = "{{project-name}}"
+authors.workspace = true
+edition.workspace = true
+
+[workspace.dependencies]
+itertools.workspace = true
+nom.workspace = true
