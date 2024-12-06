@@ -26,27 +26,27 @@ mod tests {
     #[test]
     fn test_parse_number() {
         let input = "12";
-        let (rem, num) = number(input).finish().unwrap();
+        let (rem, num) = number(input).unwrap();
 
         assert_eq!(num, 12);
         assert!(rem.is_empty());
     }
 
     #[test]
-    fn test_parse_number_pair() {
+    fn test_parse_number_report() {
         let input = "1 2 3 4 5";
-        let (rem, report) = report(input).finish().unwrap();
+        let (rem, report) = report(input).unwrap();
 
         assert_eq!(report, vec![1, 2, 3, 4, 5]);
         assert!(rem.is_empty());
     }
 
     #[test]
-    fn test_parse_lists() {
+    fn test_parse_report_list() {
         let input = "1 2 3 4 5
 5 4 3 2 1";
 
-        let (rem, reports) = report_list(input).finish().unwrap();
+        let (rem, reports) = report_list(input).unwrap();
 
         assert_eq!(reports.len(), 2);
         assert_eq!(reports[0], vec![1, 2, 3, 4, 5]);
