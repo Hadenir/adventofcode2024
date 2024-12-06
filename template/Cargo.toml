@@ -3,6 +3,6 @@ name = "{{project-name}}"
 authors.workspace = true
 edition.workspace = true
 
-[workspace.dependencies]
+[dependencies]
 itertools.workspace = true
 nom.workspace = true
