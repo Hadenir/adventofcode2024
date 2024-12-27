@@ -83,6 +83,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "day11"
+version = "0.0.0"
+dependencies = [
+ "itertools",
+ "nom",
+]
+
+[[package]]
 name = "either"
 version = "1.13.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
